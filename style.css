@@ -138,7 +138,8 @@ body {
 .grid-item {
   position: relative;
   font-size: 12px;
-
+  border: 1px black solid;
+  margin: 1px;
 }
 .symptonen-grid {
   position: relative;
