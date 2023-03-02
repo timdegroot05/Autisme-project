@@ -127,10 +127,65 @@ body {
 .Text-Homepage{
   position: absolute;
   width: 1200px;
-  height: 700px;
+  height: 600px;
   left: 8%;
-  top: 18%;
+  top: 10%;
   background-color: aliceblue;
   border-radius: 30px;
   opacity: 0.7;
+}
+
+.h1-Homepage{
+  padding: 3rem;
+  font-family: sans-serif;
+}
+
+.bluebar{
+  position: absolute;
+  top: 11%;
+  left: 2%;
+  width: 5px;
+  height: 320px;
+  background-color: rgb(29, 168, 199);
+}
+
+.background2{
+  position: relative;
+  width: 1752px;
+  height: 500px;
+  top: 200px;
+  left: 4%;
+  background-color: rgb(29, 168, 199);
+  border-radius: 30px;
+}
+
+.background2-text{
+  position: relative;
+  width: 1000px;
+  top: 10%;
+  height: 400px;
+  left: 40%;
+  border-radius: 30px;
+  background-color: aliceblue;
+  opacity: 0.7;
+}
+
+.background2-h1{
+  padding: 3rem;
+  font-family: sans-serif;
+}
+
+.background-quiz{
+  position: relative;
+  width: 1752px;
+  height: 300px;
+  top: 300px;
+  left: 4%;
+  border-radius: 30px;
+  background-color: rgb(29, 168, 199);
+}
+
+.homepagequiz-h1{
+  padding: 3rem;
+  font-family: sans-serif;
 }
