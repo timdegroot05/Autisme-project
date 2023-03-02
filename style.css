@@ -134,26 +134,3 @@ body {
   border-radius: 30px;
   opacity: 0.7;
 }
-
-.grid-item {
-  position: relative;
-  font-size: 12px;
-
-}
-.symptonen-grid {
-  position: relative;
-  margin-top: 2.5%;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-}
-.symptonen-text {
-  text-align: center;
-  font-size: 20px;
-}
-.symptonen-img {
-  width: 353.25px;
-  height: 204px;
-}
-.symptonen-title {
-  text-align: center;
-}
