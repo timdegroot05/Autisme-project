@@ -114,6 +114,8 @@ body {
   position: relative;
   top: 0;
   left: 0;
+  display: inline-block;
+  margin-top: 6.5%;
 }
 
 .kind-blauwachtergrond {
@@ -209,20 +211,25 @@ position: absolute;
   border: 1px black solid;
   margin: 1px;
 }
+/*Dit zijn alle divjes voor de foto's*/
 .symptonen-grid {
   position: relative;
-  margin-top: 2.5%;
+  margin-top: 6.5%;
   display: grid;
   grid-template-columns: auto auto auto auto;
 }
+/*Dit is de div over alle divjes en foto's*/
 .symptonen-text {
   text-align: center;
   font-size: 20px;
 }
+/*Dit is voor de tekst die boven de foto's staan*/
 .symptonen-img {
   width: 353.25px;
   height: 204px;
 }
+/*Dit is voor alle foto's die in de divjes staan*/
 .symptonen-title {
   text-align: center;
 }
+/*Voor de tekst bovenaan aan de pagina*/
