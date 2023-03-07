@@ -1,6 +1,59 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 3rem;
+  background-color: rgb(29, 168, 199);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav__logo {
+  color: white;
+}
+
+.nav__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__links ul {
+  font-size: large;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__links ul li {
+  list-style: none;
+  margin: 0 1.5rem;
+}
+
+.nav__links ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav__links ul li a:hover {
+  color: rgb(29, 168, 199);
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.nav__links div.login a {
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: rgb(29, 168, 199);
+  text-decoration: none;
 }
 .nav-bar {
   width: 100%;
