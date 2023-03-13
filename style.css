@@ -8,9 +8,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0rem 3rem;
+  padding: 0rem 3rem 0rem 3rem;
   background-color: rgb(29, 168, 199);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
 }
 
 .nav__logo {
@@ -60,12 +61,6 @@ body {
   display: grid;
 }
 
-.Text-Homepage {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-
-<<<<<<< HEAD
 .h1-Home {
   position: absolute;
   top: -20%;
@@ -157,28 +152,9 @@ body {
   background-color: lightgray;
 }
 
-.parent {
-  position: relative;
-  top: 0;
-  left: 0;
-  display: inline-block;
-  margin-top: 20px;
-}
-
-.kind-blauwachtergrond {
-  position: relative;
-  width: 1752px;
-  height: 900px;
-  left: 4%;
-  top: 100px;
-  border-radius: 30px;
-}
-
 .Text-Homepage {
   position: absolute;
   width: 1200px;
-=======
->>>>>>> 53ade2b2a0ba4f967a527036e1c4662ba79140b1
   height: 700px;
   left: 8%;
   top: 10%;
@@ -192,13 +168,14 @@ body {
   font-family: sans-serif;
 }
 
-.bluebar {
+.bluebar-1 {
   position: absolute;
-  top: 11%;
-  left: 2%;
+  top: 10%;
+  left: 5%;
   width: 5px;
   height: 320px;
   background-color: rgb(29, 168, 199);
+  border-radius: 25px;
 }
 
 .background2 {
@@ -242,36 +219,29 @@ body {
   font-family: sans-serif;
 }
 
-<<<<<<< HEAD
 footer {
   position: relative;
   display: block;
   padding: 25px;
-  height: 50px;
-=======
-.grid-Homepage-Footer {
-  position: absolute;
-  left: 0;
-  bottom: -800px;
-  width: 100%;
-  height: 300px;
->>>>>>> 53ade2b2a0ba4f967a527036e1c4662ba79140b1
+  height: 25px;
   background-color: rgb(29, 168, 199);
   color: white;
   text-align: center;
+  margin-top: 20px;
 }
 
 /*Dit zijn alle divjes voor de foto's*/
 .grid-item {
   position: relative;
-  font-size: 12px;
+  font-size: 15px;
   border: 1px black solid;
-  margin: 1px;
+  scale: 80%;
+  border-radius: 10px;
+  padding: 10px;
 }
 /*Dit is de div over alle divjes en foto's*/
 .symptonen-grid {
   position: relative;
-  margin-top: 4.5%;
   display: grid;
   grid-template-columns: auto auto auto auto;
 }
@@ -289,7 +259,6 @@ footer {
 .symptonen-title {
   text-align: center;
 }
-<<<<<<< HEAD
 
 .grid-container-oorsprong {
   display: grid;
@@ -306,7 +275,6 @@ footer {
   margin: 50px;
   font-size: 20px;
   text-align: left;
-  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .grid-item-oorsprong-1 {
@@ -323,35 +291,71 @@ footer {
 .grid-item-oorsprong-3 {
   grid-column: 1 / span 2;
   overflow: hidden;
-=======
-/*Dit is voor de overlay van de symptonen page*/
-.symptonen-overlay {
-  position: absolute;
-  /* overlap on grid-item */
-  top: 0;
-  z-index: 1;
-  width: 100%;
-  aspect-ratio: 16/9;
-  height: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
-  background-color: rgba(29, 168, 199, 0.8);
 }
-/*de text voor overlay-text van de symptonen page*/
-.symptonen-overlay-text {
-  color: white;
-  font-size: 18px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+
+.grid-container-homepage {
+  display: grid;
+  grid-template-rows: 650px 500px 300px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
-/*hierdoor gaat de overlay over de img heen*/
-.grid-item:hover .symptonen-overlay {
-  opacity: 1;
->>>>>>> 53ade2b2a0ba4f967a527036e1c4662ba79140b1
+
+.grid-container-homepage > div {
+  background-color: #ababab;
+  border-radius: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.grid-item-homepage-1 {
+  background-image: url("../Autisme-project/homepage/img/kind-blauwachtergrond.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+.grid-item-homepage-2 {
+  background-image: url("../Autisme-project/homepage/img/kids-in-classroom-og.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+#textbox-1-homepage {
+  box-sizing: border-box;
+  position: absolute;
+  padding: 50px;
+  width: 500px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  margin: 25px;
+}
+
+#textbox-2-homepage {
+  box-sizing: border-box;
+  position: relative;
+  float: right;
+  padding: 50px;
+  width: 500px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 50px;
+  margin: 25px;
+}
+
+.bluebar-2 {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 5px;
+  height: 220px;
+  background-color: rgb(29, 168, 199);
+  border-radius: 25px;
 }
