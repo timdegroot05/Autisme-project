@@ -247,7 +247,7 @@ body {
 }
 
 .Homepage-Footer{
-position: absolute;
+  position: absolute;
   left: 0;
   bottom: -800px;
   width: 100%;
@@ -284,4 +284,34 @@ position: absolute;
 /*Voor de tekst bovenaan aan de pagina*/
 .symptonen-title {
   text-align: center;
+}
+/*Dit is voor de overlay van de symptonen page*/
+.symptonen-overlay {
+  position: absolute;
+  /* overlap on grid-item */
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  aspect-ratio: 16/9;
+  height: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(29, 168, 199, 0.8);
+}
+/*de text voor overlay-text van de symptonen page*/
+.symptonen-overlay-text {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*hierdoor gaat de overlay over de img heen*/
+.grid-item:hover .symptonen-overlay {
+  opacity: 1;
 }
