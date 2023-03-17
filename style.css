@@ -241,18 +241,16 @@ a:-webkit-any-link {
 
 .grid-container-oorsprong {
   display: grid;
-  grid-template-columns: 50% 50% 100%;
-  grid-template-rows: 750px 600px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto auto auto 600px;
   padding-left: 150px;
   padding-right: 150px;
   padding-top: 25px;
   padding-bottom: 25px;
 }
 .grid-container-oorsprong > div {
-  background-color: rgba(150, 150, 150, 0.5);
-  border-radius: 25px;
-  margin: 50px;
-  font-size: 20px;
+  margin: 30px;
+  font-size: 15px;
   text-align: left;
 }
 
@@ -260,17 +258,62 @@ a:-webkit-any-link {
   background-image: url("../Autisme-project/oorsprong/img/Leo-Kanner.png");
   background-size: 100%;
   background-repeat: no-repeat;
-  padding: 25px;
+  grid-column: 1;
+  grid-row: auto;
+  border-radius: 15px 80px 15px 15px;
+  box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
 }
 
 .grid-item-oorsprong-2 {
-  padding: 25px;
+  background-color: rgb(245, 245, 245);
+  grid-column: 2;
+  grid-row: auto;
+  padding: 30px;
+  border-radius: 15px 15px 15px 80px;
+  box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
 }
 
 .grid-item-oorsprong-3 {
+  background-color: rgb(245, 245, 245);
+  grid-column: 1;
+  grid-row: 2;
+  padding: 30px;
+  border-radius: 80px 15px 80px 15px;
+  box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
+  grid-column: 1 / span 2;
+}
+
+.grid-item-oorsprong-4 {
+  background-color: rgb(245, 245, 245);
+  grid-column: 2;
+  grid-row: 3;
+  padding: 30px;
+  border-radius: 80px 15px 15px 15px;
+  box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
+}
+
+.grid-item-oorsprong-5 {
+  background-color: rgb(245, 245, 245);
+  grid-column: 1;
+  grid-row: 3 / span 2;
+  padding: 30px;
+  border-radius: 15px 15px 80px 15px;
+  box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
+}
+
+.grid-item-oorsprong-5 > img {
+  border-radius: 15px 15px 15px 15px;
+  width: 450px;
+  height: auto;
+
+}
+
+.grid-item-oorsprong-6 {
   grid-column: 1 / span 2;
   overflow: hidden;
+  border-radius: 15px 15px 15px 15px;
 }
+
 
 .grid-container-homepage {
   display: grid;
