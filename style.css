@@ -440,10 +440,11 @@ footer {
   grid-column: 1 / span 5;
   grid-row: auto;
   padding: 30px;
+  background-color: rgb(219, 219, 219);
 }
 
 .grid-item-informatie-4 {
-  grid-column: 6 / span 7;
+  grid-column: 8 / span 5;
   grid-row: auto;
   background-color: rgb(219, 219, 219);
   padding: 30px;
@@ -460,6 +461,7 @@ footer {
   grid-column: 8 / span 5;
   grid-row: auto;
   padding: 30px;
+  background-color: rgb(219, 219, 219);
 }
 
 .grid-item-informatie-7 {
