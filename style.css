@@ -463,6 +463,12 @@ footer {
   background-color: rgb(219, 219, 219);
   padding: 30px;
 }
+.grid-item-informatie-10 > h1 {
+  text-align: center;
+}
 
-
-
+.grid-item-informatie-7,
+.grid-item-informatie-8,
+.grid-item-informatie-9 > h3 {
+  text-align: center;
+}
