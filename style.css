@@ -450,7 +450,13 @@ footer {
 }
 
 .grid-item-space {
-  margin: 50px 0px;
+  color: rgb(29, 168, 199);
+  background-color: white;
+  text-align: center;
+  grid-column: 1 / span 12;
+  grid-row: auto;
+  margin: 10px 0px;
+  font-size: 30px;
 }
 
 .grid-item-informatie-1 {
