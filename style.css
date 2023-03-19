@@ -261,10 +261,10 @@ a:-webkit-any-link {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   max-height: -100%;
-  padding: 15px;
-  -moz-box-sizing:border-box;
-  -webkit-box-sizing:border-box;
-  box-sizing:border-box;
+  padding: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /*hierdoor gaat de overlay over de img heen*/
@@ -352,7 +352,7 @@ a:-webkit-any-link {
 
 .grid-container-homepage {
   display: grid;
-  grid-template-rows: 650px 500px 300px;
+  grid-template-rows: 650px 500px 500px;
 }
 
 .grid-container-homepage > div {
@@ -370,6 +370,7 @@ a:-webkit-any-link {
   background-size: 100%;
   background-repeat: no-repeat;
   padding: 20px;
+  box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
 }
 
 .grid-item-homepage-2 {
@@ -377,6 +378,15 @@ a:-webkit-any-link {
   background-size: 100%;
   background-repeat: no-repeat;
   padding: 20px;
+  box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
+}
+
+.grid-item-homepage-3 {
+  background-image: url("../Autisme-project/homepage/img/kid-in-playground.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 20px;
+  box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
 }
 
 #textbox-1-homepage {
@@ -388,6 +398,7 @@ a:-webkit-any-link {
   background: white;
   border-radius: 15px 15px 80px 15px;
   margin: 25px;
+  box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
 }
 
 #textbox-2-homepage {
@@ -398,8 +409,25 @@ a:-webkit-any-link {
   width: 500px;
   height: 300px;
   background: rgba(255, 255, 255, 0.75);
-  border-radius: 50px;
+  border-radius: 20px 50px 20px 50px;
   margin: 25px;
+  box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
+}
+
+#textbox-3-homepage {
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  padding: 50px;
+  width: 800px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 20px 50px 20px 50px;
+  margin: 5px;
+  box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .bluebar-1 {
