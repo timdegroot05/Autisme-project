@@ -5,29 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
-    <title>Document</title>
+    <title>Quiz | Stichting Autisme</title>
 </head>
 <body>
     <!-- create a navbar with the color accent rgb(29, 168, 199) -->
     
     <div class="nav">
         <div class="nav__logo">
-            <h1>Autisme</h1>
+            <h1>Stichting Autisme</h1>
         </div>
         <div class="nav__links">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Behandeling</a></li>
-                <li><a href="#">Oorsprong</a></li>
-                <li><a href="#">Symptomen</a></li>
+                <li><a href="../homepage/homepage.html">Home</a></li>
+                <li><a href="../quiz/index.html">Quiz</a></li>
+                <li><a href="../informatie/informatie.html">Informatie</li>
+                <li><a href="../behandeling/behandeling.html">Behandeling</a></li>
+                <li><a href="../symptonen/symptonen.html">Symptonen</a></li>
+                <li><a href="../oorsprong/oorsprong.html">Oorsprong</a></li>
                 <div class="login">
-                    <a href="login.html">Login</a>
+                  <a href="../login/index.html">Login</a>
                 </div>
             </ul>
         </div>
     </div>
-
-    <!-- create a quiz layout -->
     
     <section class="quiz">
         <div class="body questionnaire-container">
@@ -64,258 +64,7 @@
             </div>
         </div>
     </section>
-            
-<style>
-                
-html {
-                    overflow: hidden;
-  font-family: 'Open Sans', sans-serif;
-}
-
-#cursor {
-    position: absolute;
-    z-index: 99999999;
-    display: none;
-}
-
-.full-screen {
-    width: 100%;
-    height:100%;
-    display: flex;
-    align-items: center;
-}
-
-.question-container {
-    width: 70%;
-    height: 700px;
-  background-color: #fff;
-  border: 1px solid #222;
-  border-radius: 1px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
-  z-index: 9999999;
-  display: none;
-}
-
-.header {
-    width:100%;
-  height: 20%;
-  background-color: #eee;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.header .logo {
-    width: 80%;
-    max-height: 50%;
-    margin: auto;
-    margin-bottom: 0;
-}
-
-.header h1 {
-  font-size: 2em;
-  text-align: center;
-  margin:auto;
-}
-
-.body {
-    width: 100%;
-    height: 80%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* display: none; */
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  width: 90%;
-  height: 70%;
-  margin: auto;
-  border:none;
-}
-
-.content .logo {
-    width: auto;
-    max-height: auto;
-    margin: auto;
-    margin-bottom: 0;
-}
-
-.content h2, p {
-  margin: 5px;
-}
-
-.buttonspot {
-    display: flex;
-  flex-direction: column;
-  align-self: center;
-  width: auto;
-  height: 15%;
-  margin: auto;
-  border:none;
-}
-
-.buttonspot h2, p {
-    margin: 5px;
-}
-
-.button {
-    width: 30%;
-    height: 40px;
-  align-self: center;
-  text-align: center;
-  margin-left: 40px;
-  margin-right: 40px;
-  background: #6699ff;
-  background-image: rgb(29, 168, 199);
-  border-radius: 4px;
-  color: #ffffff;
-  font-size: 1.5em;
-  text-decoration: none;
-}
-
-
-.form {
-    display: flex;
-    flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-  margin-top:5px;
-}
-
-.form div {
-    margin :auto;
-    margin-top:5px;
-    margin-bottom: 5px;
-    width: 100%;
-    /* center */
-}
-
-.submit{
-    align-items: center;
-    height: 30px;
-    text-align: center;
-    width: 30%;
-    background: rgb(29, 168, 199);
-  background-image: rgb(29, 168, 199);
-  border-radius: 4px;
-  color: #fff;
-  font-size: 1.2em;
-  margin-top: 10px;
-}
-
-.barre-progression {
-    width: 50%;
-    align-self: center;
-    height: 10%;
-  margin: auto;
-  margin-top: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0;
-}
-
-.barre-progression h2{
-    width: 100%;
-  height: 60%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin:0;
-  color: rgb(29, 168, 199);
-}
-
-.progression {
-    width: 80%;
-  border: 0 none;
-  background: #ddd;
-  border-radius: 14px;
-  box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
-}
-.progression::-moz-progress-bar {
-    background: #FFF;
-    border-radius: 14px;
-    box-shadow: inset 0 -2px 4px rgba(0,0,0,0.4), 0 2px 5px 0px rgba(0,0,0,0.3);
-}
-.progression::-webkit-progress-bar {
-    background: transparent;
-}
-.progression::-webkit-progress-value {  
-    background-image: rgb(29, 168, 199);
-    border-radius: 14px;
-  box-shadow: inset 0 -2px 4px rgba(0,0,0,0.4), 0 2px 5px 0px rgba(0,0,0,0.3); 
-} 
-
-.bold-text{
-  font-weight: bold;
-  font-size: 1.3em;
-}
-/* create css for navbar */
-
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 3rem;
-    background-color: rgb(29, 168, 199);
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.nav__logo {
-            color: white;
-        }
-
-        .nav__links {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .nav__links ul {
-            font-size: large;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .nav__links ul li {
-            list-style: none;
-            margin: 0 1rem;
-        }
-        
-        .nav__links ul li a {
-            text-decoration: none;
-            color: white;
-        }
-
-        .nav__links ul li a:hover {
-            color: rgb(29, 168, 199);
-            background-color: white;
-            padding: 0.5rem;
-            border-radius: 0.5rem;
-        }
-        
-        .nav__links div.login a {
-            background-color: white;
-            padding: 0.5rem;
-            border-radius: 0.5rem;
-            color: rgb(29, 168, 199);
-            text-decoration: none;
-        }
-
-        
-        </style>
-        <script src="./scripts.js"></script>
-        <script src="./questions.js" type="text/javascript"></script>
-
+    <script src="./scripts.js"></script>
+    <script src="./questions.js" type="text/javascript"></script>
 </body>
 </html>
