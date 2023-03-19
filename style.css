@@ -580,7 +580,7 @@ footer {
 
 .grid-container-behandeling {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, fr);
   grid-gap: 3rem;
   margin: 75px;
@@ -588,58 +588,37 @@ footer {
 
 .grid-container-behandeling > div {
   box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
-}
-
-.behandeling-row1 {
-  grid-row: auto;
-}
-.grid-item-informatie-10 > h1 {
   text-align: center;
-}
-
-.behandeling-text1 {
-  text-align: center;
-  margin: 80px;
-  padding: 15px;
-  width: 45%;
-  border-radius: 30px;
   background-color: aliceblue;
+  padding: 30px;
 }
 
-.behandeling-image1 {
-  margin: 20px;
-  margin-top: 80px;
-  padding: 5px;
-  border-radius: 30px;
-  background-color: aliceblue;
+.grid-container-behandeling > div > img {
+  object-fit: cover;
+  width: 80%;
+  max-height: 100%;
 }
 
-.behandeling-img1 {
-  width: 75%;
+.grid-item-behandeling-1 {
+  grid-column: 1;
+  grid-row: 1;
+  border-radius: 80px 15px 80px 15px;
 }
 
-.behandeling-row2 {
-  grid-row: auto;
-}  
-
-.behandeling-image2 {
-  margin-left: 80px;
-  padding: 15px;
-  border-radius: 30px;
-  background-color: aliceblue;
+.grid-item-behandeling-2 {
+  grid-column: 2;
+  grid-row: 1;
+  border-radius: 15px 80px 15px 80px;
 }
 
-.behandeling-img2 {
-  width: 500px;
-  height: 300px;
+.grid-item-behandeling-3 {
+  grid-column: 2;
+  grid-row: 2;
+  border-radius: 80px 15px 80px 15px;
 }
 
-.behandeling-text2 {
-  text-align: center;
-  margin-left: 80px;
-  margin-top: 40px;
-  padding: 15px;
-  width: 45%;
-  border-radius: 30px;
-  background-color: aliceblue;
+.grid-item-behandeling-4 {
+  grid-column: 1;
+  grid-row: 2;
+  border-radius: 15px 80px 15px 80px;
 }
