@@ -1,10 +1,11 @@
+/*gehele pagina 0 padding*/
 body {
   padding: 0;
   margin: 0;
   font-family: sans-serif;
   line-height: 2rem;
 }
-
+/*de footer voor elke pagina*/
 footer {
   position: relative;
   display: block;
@@ -15,12 +16,13 @@ footer {
   text-align: center;
   margin-top: 20px;
 }
-
+/*elke pagina heeft een pointer op links*/
 a:-webkit-any-link {
   cursor: pointer;
   text-decoration: none;
 }
 
+/*custom scrollbar*/
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -36,7 +38,7 @@ a:-webkit-any-link {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-
+/*de header zijn stijl*/
 .nav {
   display: flex;
   justify-content: space-between;
@@ -108,7 +110,7 @@ a:-webkit-any-link {
   border-radius: 20px;
   background-color: lightgray;
 }
-
+/*elke redirect in de header zijn stijl*/
 .h1-Home {
   position: absolute;
   top: -20%;
@@ -117,7 +119,7 @@ a:-webkit-any-link {
   font-family: sans-serif;
   font-size: x-large;
 }
-
+/*elke redirect in de header zijn stijl*/
 .h1-Symptonen {
   position: absolute;
   top: -20%;
@@ -125,7 +127,7 @@ a:-webkit-any-link {
   font-family: sans-serif;
   font-size: x-large;
 }
-
+/*elke redirect in de header zijn stijl*/
 .h1-Oorsprong {
   position: absolute;
   top: -20%;
@@ -133,7 +135,7 @@ a:-webkit-any-link {
   font-family: sans-serif;
   font-size: x-large;
 }
-
+/*elke redirect in de header zijn stijl*/
 .h1-Behandeling {
   position: absolute;
   top: -20%;
@@ -141,7 +143,7 @@ a:-webkit-any-link {
   font-family: sans-serif;
   font-size: x-large;
 }
-
+/*elke redirect in de header zijn stijl*/
 .h1-Inlog {
   position: absolute;
   top: -20%;
@@ -149,7 +151,7 @@ a:-webkit-any-link {
   font-family: sans-serif;
   font-size: x-large;
 }
-
+/*elke redirect in de header zijn stijl*/
 .link-Home {
   position: absolute;
   width: 13%;
@@ -159,7 +161,7 @@ a:-webkit-any-link {
   border-radius: 20px;
   background-color: lightgray;
 }
-
+/*elke redirect in de header zijn stijl*/
 .link-Symptonen {
   position: absolute;
   width: 13%;
@@ -169,7 +171,7 @@ a:-webkit-any-link {
   border-radius: 20px;
   background-color: lightgray;
 }
-
+/*elke redirect in de header zijn stijl*/
 .link-Oorsprong {
   position: absolute;
   width: 13%;
@@ -179,7 +181,7 @@ a:-webkit-any-link {
   border-radius: 20px;
   background-color: lightgray;
 }
-
+/*elke redirect in de header zijn stijl*/
 .link-Behandeling {
   position: absolute;
   width: 13%;
@@ -189,7 +191,7 @@ a:-webkit-any-link {
   border-radius: 20px;
   background-color: lightgray;
 }
-
+/*elke redirect in de header zijn stijl*/
 .link-Inlog {
   position: absolute;
   width: 6%;
@@ -275,7 +277,7 @@ a:-webkit-any-link {
 .symptonen-overlay:hover {
   opacity: 1;
 }
-
+/*grid container van oorsprong*/
 .grid-container-oorsprong {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -283,12 +285,13 @@ a:-webkit-any-link {
   margin: 75px;
   grid-gap: 3rem;
 }
+/*elke div wordt aangesproken*/
 .grid-container-oorsprong > div {
   font-size: 18px;
   text-align: left;
   background-color: aliceblue;
 }
-
+/*grid item oorsprong*/
 .grid-item-oorsprong-1 {
   background-image: url("../Autisme-project/oorsprong/img/Leo-Kanner.png");
   background-size: cover;
@@ -300,12 +303,12 @@ a:-webkit-any-link {
   transition: 0.2s all ease-in-out;
   padding: 30px;
 }
-
+/*grid item oorsprong*/
 .grid-item-oorsprong-1:hover {
   transform: translate(5px, 5px);
   box-shadow: 0 10px 10px rgb(0 0 0 / 10%);
 }
-
+/*grid item oorsprong*/
 .grid-item-oorsprong-2 {
   grid-column: 2;
   grid-row: 1 / span 3;
@@ -313,7 +316,7 @@ a:-webkit-any-link {
   border-radius: 15px 15px 15px 80px;
   box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
 }
-
+/*grid item oorsprong*/
 .grid-item-oorsprong-3 {
   grid-column: 1;
   grid-row: 3 / span 4;
@@ -321,7 +324,7 @@ a:-webkit-any-link {
   border-radius: 80px 15px 80px 15px;
   box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
 }
-
+/*grid item oorsprong*/
 .grid-item-oorsprong-4 {
   grid-column: 2;
   grid-row: 4 / span 4;
@@ -329,7 +332,7 @@ a:-webkit-any-link {
   border-radius: 80px 15px 15px 15px;
   box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
 }
-
+/*grid item oorsprong*/
 .grid-item-oorsprong-5 {
   grid-column: 1;
   grid-row: 7 / span 4;
@@ -337,14 +340,14 @@ a:-webkit-any-link {
   border-radius: 15px 15px 80px 15px;
   box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
 }
-
+/*grid item oorsprong alle imgs*/
 .grid-item-oorsprong-5 > img {
   border-radius: 15px 15px 15px 15px;
   object-fit: cover;
   width: 100%;
   max-height: 100%;
 }
-
+/*grid item oorsprong*/
 .grid-item-oorsprong-6 {
   grid-column: 2;
   grid-row: 8 / span 3;
@@ -352,12 +355,12 @@ a:-webkit-any-link {
   object-fit: cover;
   border-radius: 15px 15px 15px 15px;
 }
-
+/*grid container van homepage*/
 .grid-container-homepage {
   display: grid;
   grid-template-rows: 650px 450px 400px;
 }
-
+/*grid item homepage alle divjes*/
 .grid-container-homepage > div {
   background-color: #ababab;
   margin-left: 25px;
@@ -367,7 +370,7 @@ a:-webkit-any-link {
   font-size: 20px;
   text-align: left;
 }
-
+/*grid item homepage*/
 .grid-item-homepage-1 {
   background-image: url("../Autisme-project/homepage/img/kind-blauwachtergrond.png");
   background-size: 100%;
@@ -375,7 +378,7 @@ a:-webkit-any-link {
   padding: 20px;
   box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
 }
-
+/*grid item homepage*/
 .grid-item-homepage-2 {
   background-image: url("../Autisme-project/homepage/img/kids-in-classroom-og.png");
   background-size: 100%;
@@ -383,7 +386,7 @@ a:-webkit-any-link {
   padding: 20px;
   box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
 }
-
+/*grid item homepage*/
 .grid-item-homepage-3 {
   background-image: url("../Autisme-project/homepage/img/kid-in-playground.png");
   background-size: 100%;
@@ -391,7 +394,7 @@ a:-webkit-any-link {
   padding: 20px;
   box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
 }
-
+/*text box homepage*/
 #textbox-1-homepage {
   box-sizing: border-box;
   position: absolute;
@@ -403,12 +406,12 @@ a:-webkit-any-link {
   margin: 25px;
   box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
 }
-
+/*logo in de titel*/
 #puzzle {
   width: 40px;
   height: auto;
 }
-
+/*text box homepage*/
 #textbox-2-homepage {
   box-sizing: border-box;
   position: relative;
@@ -421,7 +424,7 @@ a:-webkit-any-link {
   margin: 25px;
   box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
 }
-
+/*text box homepage*/
 #textbox-3-homepage {
   box-sizing: border-box;
   position: relative;
@@ -434,7 +437,7 @@ a:-webkit-any-link {
   margin: 25px;
   box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
 }
-
+/*blauwe lijn naast text*/
 .bluebar {
   position: absolute;
   top: 5%;
@@ -445,7 +448,7 @@ a:-webkit-any-link {
   background-color: rgb(29, 168, 199);
   border-radius: 25px;
 }
-
+/*grid container informatie*/
 .grid-container-informatie {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -453,7 +456,7 @@ a:-webkit-any-link {
   grid-gap: 3rem;
   margin: 75px;
 }
-
+/*de wegwijs titel*/
 .grid-item-wegwijs {
   color: rgb(29, 168, 199);
   background-color: white;
@@ -462,7 +465,7 @@ a:-webkit-any-link {
   grid-row: auto;
   font-size: 30px;
 }
-
+/*grid item die stukje hoger maakt*/
 .grid-item-space {
   color: rgb(29, 168, 199);
   background-color: white;
@@ -472,7 +475,7 @@ a:-webkit-any-link {
   margin: 10px 0px;
   font-size: 30px;
 }
-
+/*gird item informatie*/
 .grid-item-informatie-1 {
   grid-column: 1 / span 7;
   grid-row: auto;
@@ -482,7 +485,7 @@ a:-webkit-any-link {
   background-color: aliceblue;
   font-size: 18px;
 }
-
+/*gird item informatie*/
 .grid-item-informatie-2 {
   grid-column: 8 / span 5;
   grid-row: 1;
@@ -493,22 +496,22 @@ a:-webkit-any-link {
   box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
   background-color: aliceblue;
 }
-
+/*gird item informatie*/
 .grid-item-informatie-3 {
   grid-column: 1 / span 4;
   grid-row: auto;
 }
-
+/*gird item informatie*/
 .grid-item-informatie-4 {
   grid-column: 5 / span 4;
   grid-row: auto;
 }
-
+/*gird item informatie*/
 .grid-item-informatie-5 {
   grid-column: 9 / span 4;
   grid-row: auto;
 }
-
+/*gird item informatie alle titels*/
 .grid-item-informatie-3 > h3,
 .grid-item-informatie-4 > h3,
 .grid-item-informatie-5 > h3 {
@@ -516,7 +519,7 @@ a:-webkit-any-link {
   padding: 25px 0px;
   font-size: 25px;
 }
-
+/*gird item informatie alle imgs*/
 .grid-item-informatie-3 > img,
 .grid-item-informatie-4 > img,
 .grid-item-informatie-5 > img {
@@ -525,7 +528,7 @@ a:-webkit-any-link {
   height: 225px;
   border-radius: 30px 30px 0px 0px;
 }
-
+/*gird item informatie buttons*/
 .grid-item-informatie-3,
 .grid-item-informatie-4,
 .grid-item-informatie-5 {
@@ -536,14 +539,14 @@ a:-webkit-any-link {
   color: rgb(29, 168, 199);
   background-color: aliceblue;
 }
-
+/*gird item informatie buttons op hover*/
 .grid-item-informatie-3:hover,
 .grid-item-informatie-4:hover,
 .grid-item-informatie-5:hover {
   transform: translate(5px, 5px);
   box-shadow: 0 10px 10px rgb(0 0 0 / 5%);
 }
-
+/*gird item informatie*/
 .grid-item-informatie-6 {
   grid-column: 1 / span 5;
   grid-row: auto;
@@ -553,14 +556,14 @@ a:-webkit-any-link {
   background-color: aliceblue;
   font-size: 18px;
 }
-
+/*gird item informatie 6 imgs*/
 .grid-item-informatie-6 > img {
   object-fit: cover;
   width: 100%;
   max-height: 100%;
   border-radius: 15px 15px 15px 15px;
 }
-
+/*gird item informatie*/
 .grid-item-informatie-7 {
   grid-column: 6 / span 7;
   grid-row: auto;
@@ -570,7 +573,7 @@ a:-webkit-any-link {
   background-color: aliceblue;
   font-size: 18px;
 }
-
+/*gird item informatie*/
 .grid-item-informatie-8 {
   grid-column: 1 / span 7;
   grid-row: auto;
@@ -580,7 +583,7 @@ a:-webkit-any-link {
   background-color: aliceblue;
   font-size: 18px;
 }
-
+/*gird item informatie*/
 .grid-item-informatie-9 {
   grid-column: 8 / span 5;
   grid-row: auto;
@@ -591,7 +594,7 @@ a:-webkit-any-link {
   background-size: cover;
   background-color: aliceblue;
 }
-
+/*gird container van behandeling*/
 .grid-container-behandeling {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -600,50 +603,50 @@ a:-webkit-any-link {
   margin: 75px;
   font-size: 18px;
 }
-
+/*gird container van behandeling alle divs*/
 .grid-container-behandeling > div {
   box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
   text-align: center;
   background-color: aliceblue;
   padding: 30px;
 }
-
+/*gird container van behandeling alle imgs in de div*/
 .grid-container-behandeling > div > img {
   object-fit: cover;
   width: 100%;
   max-height: 100%;
 }
-
+/*gird item van behandeling*/
 .grid-item-behandeling-1 {
   grid-column: 1;
   grid-row: 1;
   border-radius: 80px 15px 80px 15px;
 }
-
+/*gird item van behandeling*/
 .grid-item-behandeling-2 {
   grid-column: 2;
   grid-row: 1;
   border-radius: 15px 80px 15px 80px;
 }
-
+/*gird item van behandeling*/
 .grid-item-behandeling-3 {
   grid-column: 2;
   grid-row: 2;
   border-radius: 80px 15px 80px 15px;
 }
-
+/*gird item van behandeling*/
 .grid-item-behandeling-4 {
   grid-column: 1;
   grid-row: 2;
   border-radius: 15px 80px 15px 80px;
 }
-
+/*cursor van quiz*/
 #cursor {
   position: absolute;
   z-index: 99999999;
   display: none;
 }
-
+/*de quiz container*/
 .quiz {
   margin: 75px;
   border-radius: 15px 80px 15px 80px;
@@ -656,7 +659,7 @@ a:-webkit-any-link {
   display: grid;
   grid-row: repeat(3, 1fr);
 }
-
+/*de vragen container*/
 .question-container {
   width: 70%;
   height: 700px;
@@ -666,14 +669,14 @@ a:-webkit-any-link {
   overflow: hidden;
   z-index: 9999999;
 }
-
+/*content van de vragen*/
 .content {
   width: 90%;
   height: 70%;
   margin: auto;
   border: none;
 }
-
+/*logo in de content box*/
 .content .logo {
   width: auto;
   max-height: auto;
@@ -684,7 +687,7 @@ a:-webkit-any-link {
 .content h2, p {
   margin: 5px;
 }
-
+/*button plek*/
 .buttonspot {
   display: flex;
   flex-direction: column;
@@ -698,7 +701,7 @@ a:-webkit-any-link {
 .buttonspot h2, p {
   margin: 5px;
 }
-
+/*next button quiz*/
 .button {
   width: 30%;
   height: 40px;
@@ -713,7 +716,7 @@ a:-webkit-any-link {
   font-size: 1.5em;
   text-decoration: none;
 }
-
+/*form van login*/
 .form {
   display: flex;
   flex-direction: row;
@@ -722,11 +725,11 @@ a:-webkit-any-link {
   width: 100%;
   margin-top: 5px;
 }
-
+/*elke input heeft nu een pointer als cursor*/
 input {
   cursor: pointer;
 }
-
+/*alle divs in form*/
 .form div {
   margin: auto;
   margin-top: 5px;
@@ -734,7 +737,7 @@ input {
   width: 100%;
   /* center */
 }
-
+/*submit knop*/
 .submit {
   text-align: center;
   width: 30%;
@@ -749,7 +752,7 @@ input {
   transition: 0.2s all ease-in-out;
   cursor: pointer;
 }
-
+/*submit knop hover*/
 .submit:hover {
   transform: translate(5px, 5px);
   box-shadow: 0 10px 10px rgb(0 0 0 / 5%);
@@ -759,7 +762,7 @@ input {
   font-size: 30px;
   margin: 20px;
 }
-
+/*progressie bar*/
 .barre-progression {
   width: 50%;
   align-self: center;
@@ -771,7 +774,7 @@ input {
   justify-content: center;
   padding: 0;
 }
-
+/*progressie bar*/
 .barre-progression h2 {
   width: 100%;
   height: 60%;
@@ -782,7 +785,7 @@ input {
   margin: 0;
   color: rgb(29, 168, 199);
 }
-
+/*progressie bar*/
 .progression {
   width: 80%;
   border: 0 none;
@@ -791,15 +794,18 @@ input {
   box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5),
     0px 1px 0px rgba(255, 255, 255, 0.2);
 }
+/*progressie bar*/
 .progression::-moz-progress-bar {
   background: #fff;
   border-radius: 14px;
   box-shadow: inset 0 -2px 4px rgba(0, 0, 0, 0.4),
     0 2px 5px 0px rgba(0, 0, 0, 0.3);
 }
+/*progressie bar*/
 .progression::-webkit-progress-bar {
   background: transparent;
 }
+/*progressie bar*/
 .progression::-webkit-progress-value {
   background-image: rgb(29, 168, 199);
   border-radius: 14px;
@@ -821,16 +827,18 @@ div.space h1 {
   text-align: center;
   font-size: 50px;
 }
+/*login form*/
 form {
   display: flex;
   flex-direction: column;
   width: 300px;
   margin: 0 auto;
 }
-
+/*login form*/
 form label {
   margin-top: 10px;
 }
+/*login input*/
 form input {
   margin-top: 5px;
 }
@@ -838,14 +846,14 @@ form input {
 form input[type="submit"] {
   margin-top: 10px;
 }
-
+/*body van login*/
 .login {
   background-image: url("login/img/gras.png");
   background-size: 100%;
   background-repeat: no-repeat;
   text-align: center;
 }
-
+/*body van login*/
 .form-login {
   background: #ffffff;
   border: 1px solid #f8f8f8;
@@ -869,7 +877,7 @@ form input[type="submit"] {
   font-size: 20px;
   cursor: pointer;
 }
-
+/*image in login*/
 #image {
   margin-top: 10px;
   box-shadow: 5px 5px 5px 5px gray;
@@ -885,6 +893,7 @@ form input[type="submit"] {
   border: red 2px solid;
   margin-left: 10px;
 }
+/*de input gedeelte van de login*/
 #user-input {
   box-shadow: 5px 5px 5px 5px gray;
   width: auto;
@@ -894,10 +903,11 @@ form input[type="submit"] {
   height: 40px;
   border: red 0px solid;
 }
-
+/*de input gedeelte van de login*/
 .inline {
   display: inline-block;
 }
+/*de input gedeelte van de login*/
 #btn {
   box-shadow: 5px 5px 5px grey;
   color: aqua;
