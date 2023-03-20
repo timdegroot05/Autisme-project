@@ -1,28 +1,46 @@
 
 let correctAnswers = 0;
 let question = [
-    // ask questions to see if i have autism or not
-    "What is the average age of a child with autism?",
-    "What should you do when you see a pedestrian crossing the road?",
-
-
-
+    "Ruim hoeveel procent van de Nederlanders hebben autisme?",
+    "Kan door een bloedtest vastgesteld worden of iemand autisme heeft?",
+    "Wat voor klachten krijgen mensen met autisme?",
+    "Hoeveel procent van de bevolking heeft angst- en/of dwangstoornis, posttraumatische stress-stoornis (ptss), burn-out of een persoonlijkheidsstoornis?",
+    "De meeste mensen met autisme hebben een normale tot hoge intelligentie Klop dit?",
+    "Kan iemand met autisme vast lopen van basis- naar voortgezet onderwijs of van onderwijs naar stage/ werk?",
+    "Is het al bekend wat autisme precies is?",
+    "Met wat kan autisme objectief vastgesteld worden?",
+    "Klopt het dat autisme op veel verschillende manieren tot uiting kan komen?",
+    "Komen ADHD en epilepsie vaak voor bij iemand met autisme? "
 ];
 
 let answers = [
-    // answers to the questions
-    ["1", "2", "3", "4"],
+    ["1%", "3%", "5%", "9%"],
+    ["Ja", "Nee"],
+    ["Problemen met lezen", "Sociaal actief", "Stemmingsstoornis & depressie", "Angst"],
+    ["30%", "40%", "10%", "60%"],
+    ["Ja", "Nee"],
+    ["Ja", "Nee"],
+    ["Ja", "Nee"],
+    ["Fysieke kenmerken", "Houdingskenmerken", "Gedragskenmerken"],
+    ["Ja", "Nee"],
+    ["Ja", "Nee"]
 ];
 
 let correctAnswer = [
-    "1",
-    "2",
-
+    "1%",
+    "Nee",
+    "Stemmingsstoornis & depressie",
+    "40%",
+    "Nee",
+    "Ja",
+    "Nee",
+    "Gedragskenmerken",
+    "Ja",
+    "Ja"
 ];
 
 let randomQuestion = Math.floor(Math.random() * question.length);
 
-// show the question
 document.getElementById("question").innerHTML = question[randomQuestion];
 
 let answer = "";
@@ -36,12 +54,11 @@ for (let i = 0; i < answers[randomQuestion].length; i++) {
   `;
 }
 document.getElementById("question-form").innerHTML = answer;
-document.getElementById("question-form").innerHTML += `<button type="submit" id="submit" class="submit">Next question</button>`;
+document.getElementById("question-form").innerHTML += `<button type="submit" id="submit" class="submit">Volgende vraag</button>`;
 
-// check the answer
 
 function checkAnswer() {
-    // check if the answer is correct
+
     let userAnswer = document.querySelector('input[name="question"]:checked').value;
     console.log(userAnswer);
 
@@ -54,35 +71,32 @@ function checkAnswer() {
 }
 let answerr = 0;
 let progress = document.querySelector(".progression");
-// show total number of questions answered even if the answer is wrong
+
 progress.value = answerr;
 
 addEventListener("submit", function(event) {
 
     event.preventDefault();
-    // check if all questions have been answered
     question.splice(randomQuestion, 1);
     answers.splice(randomQuestion, 1);
     correctAnswer.splice(randomQuestion, 1);
     randomQuestion = Math.floor(Math.random() * question.length);
-    // or if question is undefined
+
     if (answers[randomQuestion] == undefined) {
-        document.getElementById("question").innerHTML = `You have answered ${correctAnswers} out of 10 questions correctly`;
+        document.getElementById("question").innerHTML = `Je hebt ${correctAnswers} van de 10 vragen goed`;
         document.getElementById("question-form").innerHTML = "";
         return;
     }
 
     if (question.length == 0) {
-        document.getElementById("question").innerHTML = `You have answered ${correctAnswers} out of 10 questions correctly`;
+        document.getElementById("question").innerHTML = `Je hebt ${correctAnswers} van de 10 vragen goed`;
         document.getElementById("question-form").innerHTML = "";
         return;
     }
 
     checkAnswer();
-    // make sure the previous questions are not repeated
 
     answerr += 1;
-    // show the question
     document.getElementById("question").innerHTML = question[randomQuestion];
 
     let answer = "";
@@ -96,9 +110,8 @@ addEventListener("submit", function(event) {
     `;
     }
     document.getElementById("question-form").innerHTML = answer;
-    document.getElementById("question-form").innerHTML += `<button type="submit" id="submit" class="submit">Next question</button>`;
+    document.getElementById("question-form").innerHTML += `<button type="submit" id="submit" class="submit">Volgende vraag</button>`;
 
-    // add 1 to the progress bar
     let progress = document.querySelector(".progression");
     progress.value = answerr;
 

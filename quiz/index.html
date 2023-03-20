@@ -8,8 +8,6 @@
     <title>Quiz | Stichting Autisme</title>
 </head>
 <body>
-    <!-- create a navbar with the color accent rgb(29, 168, 199) -->
-    
     <div class="nav">
         <div class="nav__logo">
             <h1>Stichting Autisme</h1>
@@ -28,42 +26,26 @@
             </ul>
         </div>
     </div>
-    
     <section class="quiz">
         <div class="body questionnaire-container">
             <div class="content">
-                <h2 id="questionNumero"></h2>
                 <p id="question"></p>
                 <form class="form" id="question-form">
-                <!-- <div>
-                  <input type="radio" name="question" id="answerA" value="A">
-                  <label class="answerA"></label>
-                </div>
-                <div>
-                    <input type="radio" name="question" id="answerB" value="B">
-                    <label class="answerB"></label>
-                </div>
-                <div>
-                    <input type="radio" name="question" id="answerC" value="C">
-                    <label class="answerC"></label>
-                </div>
-                <div>
-                    <input type="radio" name="question" id="answerD" value="D">
-                    <label class="answerD"></label>
-                </div> -->
-                <br>
-                <br>
-                    <button type="submit" id="submit" class="submit">Next question</button>
-                    </form>
-                </div>
-                <div class ="barre-progression">
-                    <h2>Progress</h2>
-                    <progress class="progression" value="0" max="10" >
-                    </div>
+                    <button type="submit" id="submit" class="submit">Volgende vraag</button>
+                </form>
+            </div>
+            <div class ="barre-progression">
+                <h2>Voortgang</h2>
+                <progress class="progression" value="0" max="10">
+
                 </div>
             </div>
         </div>
     </section>
+    <footer>
+        <span style="float: right">2023</span>
+        <span style="float: left">Tim Statz</span>
+      </footer>
     <script src="./scripts.js"></script>
     <script src="./questions.js" type="text/javascript"></script>
 </body>
